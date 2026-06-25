@@ -1,0 +1,18 @@
+# VS Code
+.vscode/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Compiled Java files
+.class
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Build folders
+target/
+out/
+bin/
