@@ -28,3 +28,28 @@ mvn test
 ```
 BUILD SUCCESS
 ```
+
+
+
+# Exercise 2 - Verifying Interactions
+
+## Objective
+
+Learn how to verify that a mocked object's method is invoked during execution.
+
+## Concepts Used
+
+- Mockito Mock
+- verify()
+- Unit Testing
+
+## Files
+
+- ExternalApi.java
+- MyService.java
+- VerifyInteractionTest.java
+
+## Run
+
+```bash
+mvn test
