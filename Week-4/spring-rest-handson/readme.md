@@ -202,5 +202,122 @@ Hello World!!
 - ✅ Exercise 2 Completed
 - ✅ Exercise 3 Completed
 
-More Week 4 exercises will be added to this project.
+
+---
+
+# Exercise 4 – REST Country Web Service
+
+## Objective
+
+Create a REST endpoint that returns the India `Country` bean configured in the Spring XML configuration.
+
+---
+
+## REST Endpoint
+
+| HTTP Method | URL |
+|-------------|-----|
+| GET | /country |
+
+---
+
+## Controller
+
+```
+CountryController
+```
+
+---
+
+## Method
+
+```java
+@RequestMapping("/country")
+public Country getCountryIndia()
+```
+
+---
+
+## Implementation
+
+- Loads the `Country` bean from `country.xml` using `ApplicationContext`.
+- Returns the `Country` object.
+- Spring Boot automatically converts the Java object into a JSON response using Jackson.
+
+---
+
+## Sample Request
+
+```
+http://localhost:8083/country
+```
+
+---
+
+## Sample Response
+
+```json
+{
+  "code": "IN",
+  "name": "India"
+}
+```
+
+---
+
+## Concepts Covered
+
+- REST Controller
+- @RequestMapping
+- Spring IoC Container
+- XML Bean Configuration
+- ApplicationContext
+- Bean Retrieval
+- JSON Serialization using Jackson
+
+---
+
+## Request Flow
+
+```
+Browser
+     │
+GET /country
+     │
+DispatcherServlet
+     │
+CountryController
+     │
+ApplicationContext
+     │
+country.xml
+     │
+Country Bean
+     │
+Jackson
+     │
+JSON Response
+```
+
+---
+
+## Output
+
+Endpoint successfully returns:
+
+```json
+{
+  "code": "IN",
+  "name": "India"
+}
+```
+
+---
+
+## Learning Outcome
+
+- Learned how Spring Boot exposes Java objects as REST resources.
+- Understood how Spring loads beans from XML configuration.
+- Learned how Spring Boot automatically serializes Java objects into JSON.
+- Understood the request processing flow in a Spring REST application.
 
