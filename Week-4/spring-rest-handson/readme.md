@@ -321,3 +321,150 @@ Endpoint successfully returns:
 - Learned how Spring Boot automatically serializes Java objects into JSON.
 - Understood the request processing flow in a Spring REST application.
 
+---
+
+# Exercise 5 – REST: Get Country Based on Country Code
+
+## Objective
+
+Create a REST endpoint that returns a specific country based on the country code provided in the URL.
+
+The country code comparison should be **case-insensitive**.
+
+---
+
+## REST Endpoint
+
+| HTTP Method | URL |
+|-------------|--------------------|
+| GET | `/countries/{code}` |
+
+---
+
+## Sample Request
+
+```
+http://localhost:8083/countries/in
+```
+
+---
+
+## Sample Response
+
+```json
+{
+  "code": "IN",
+  "name": "India"
+}
+```
+
+---
+
+## Components Added
+
+### CountryController
+
+Added a new endpoint:
+
+```java
+@GetMapping("/countries/{code}")
+```
+
+This endpoint accepts a country code from the URL and delegates the request to `CountryService`.
+
+---
+
+### CountryService
+
+Created a service layer to:
+
+- Load the country list from `country.xml`
+- Search for the matching country
+- Perform case-insensitive comparison using `equalsIgnoreCase()`
+- Return the matching `Country` object
+
+---
+
+### country.xml
+
+Updated to store multiple countries:
+
+- India
+- United States
+- Germany
+- Japan
+
+using a Spring `<util:list>`.
+
+---
+
+## Concepts Covered
+
+- REST Controller
+- Service Layer
+- `@Service`
+- `@Autowired`
+- `@GetMapping`
+- `@PathVariable`
+- Spring IoC Container
+- XML Bean Configuration
+- Java Collections
+- Enhanced For Loop
+- Case-Insensitive Search
+- JSON Serialization using Jackson
+
+---
+
+## Request Flow
+
+```
+Browser
+     │
+GET /countries/in
+     │
+DispatcherServlet
+     │
+CountryController
+     │
+CountryService
+     │
+country.xml
+     │
+List<Country>
+     │
+Search
+     │
+Country Object
+     │
+Jackson
+     │
+JSON Response
+```
+
+---
+
+## Output
+
+```
+GET /countries/in
+```
+
+Response
+
+```json
+{
+  "code": "IN",
+  "name": "India"
+}
+```
+
+---
+
+## Learning Outcomes
+
+- Implemented URL path variables using `@PathVariable`.
+- Learned the purpose of the Service layer.
+- Understood separation of concerns.
+- Loaded multiple beans from Spring XML configuration.
+- Implemented case-insensitive searching.
+- Returned Java objects as JSON responses.
