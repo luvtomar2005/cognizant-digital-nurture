@@ -741,4 +741,4 @@ Response
 
 # Exercise Status
 
-**Completed Successfully** ✅
+**Completed Successfully**
