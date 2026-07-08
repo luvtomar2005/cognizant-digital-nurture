@@ -4,9 +4,9 @@
 
 ---
 
-## About
+# About
 
-This repository is organized according to the official Cognizant Deep Skilling roadmap and contains all mandatory hands-on exercises completed during the Java Full Stack Engineering (Java FSE) learning program.
+This repository is organized according to the official Cognizant Digital Nurture Program roadmap and contains all mandatory hands-on exercises completed during the Java Full Stack Engineering (Java FSE) learning program.
 
 The objective of this repository is to:
 
@@ -20,7 +20,7 @@ The objective of this repository is to:
 
 # Repository Structure
 
-```
+```text
 cognizant-digital-nurture
 │
 ├── Week-1
@@ -28,6 +28,8 @@ cognizant-digital-nurture
 ├── Week-2
 │
 ├── Week-3
+│
+├── Week-4
 │
 └── ...
 ```
@@ -44,13 +46,16 @@ Each week's folder contains the mandatory hands-on exercises assigned during the
 - SQL
 - PL/SQL
 
-## Backend
+## Backend Technologies
 
 - Spring Core
 - Spring Boot
+- Spring Security
 - Spring Data JPA
 - Hibernate
 - Maven
+- RESTful Web Services
+- JWT (JSON Web Token)
 
 ## Testing
 
@@ -77,7 +82,7 @@ To follow standard software engineering practices, development is performed usin
 
 Workflow followed:
 
-```
+```text
 main
    │
    ├── feature/week-1
@@ -93,6 +98,12 @@ main
    │        └── Merge into main
    │
    ├── feature/week-3
+   │        │
+   │        ├── Multiple commits
+   │        ├── Pull Request
+   │        └── Merge into main
+   │
+   ├── feature/week-4
    │        │
    │        ├── Multiple commits
    │        ├── Pull Request
@@ -139,22 +150,57 @@ After successful review and merge, feature branches are deleted to keep the repo
 
 ## Week 2
 
-- Mandatory Cognizant hands-on exercises completed.
+### Cognizant Mandatory Hands-on Exercises
+
+- Completed all mandatory exercises assigned for Week 2.
 
 ---
 
 ## Week 3
 
-### Spring Core & Maven
+### Spring Core
 
 - Configuring a Basic Spring Application
 - Implementing Dependency Injection
-- Creating and Configuring a Maven Project
+- Spring Bean Configuration
+- Spring IoC Container
+
+### Maven
+
+- Creating and Configuring Maven Projects
+- Dependency Management
 
 ### Spring Data JPA
 
 - Spring Data JPA Quick Example
-- Difference Between JPA, Hibernate and Spring Data JPA
+- Entity Mapping
+- Repository Layer
+- Service Layer
+- Difference between JPA, Hibernate and Spring Data JPA
+
+---
+
+## Week 4
+
+### Spring REST using Spring Boot
+
+- Created Spring Boot Web Application
+- Configured Spring XML Bean Definitions
+- Loaded Country Bean from XML Configuration
+- Hello World RESTful Web Service
+- REST API to Retrieve Country Details
+- REST API to Retrieve Country using Country Code
+- Layered Architecture (Controller-Service)
+
+### Spring Security & JWT
+
+- Configured Spring Security
+- In-Memory User Authentication
+- Role-Based Authorization
+- HTTP Basic Authentication
+- JWT Token Generation
+- Authentication Service returning JWT Token
+- Protected REST Endpoints
 
 ---
 
@@ -163,10 +209,14 @@ After successful review and merge, feature branches are deleted to keep the repo
 - Followed layered architecture in Spring applications.
 - Implemented Dependency Injection using Spring IoC.
 - Built Spring Boot applications using Maven.
+- Developed RESTful Web Services using Spring Boot.
+- Implemented Spring Security with role-based authentication.
+- Generated JWT tokens for authenticated users.
 - Connected Spring Boot with MySQL using Spring Data JPA.
-- Created Entity, Repository and Service layers.
+- Created Controller, Service, Repository and Entity layers.
 - Used Hibernate as the JPA implementation.
 - Followed Git feature branch workflow with Pull Requests.
+- Documented every hands-on exercise with detailed README files.
 
 ---
 
@@ -178,6 +228,9 @@ Through this program I aim to strengthen my understanding of:
 - Object-Oriented Programming
 - Spring Framework
 - Spring Boot
+- Spring Security
+- REST API Development
+- JWT Authentication
 - Spring Data JPA
 - Hibernate
 - SQL & PL/SQL
@@ -194,26 +247,32 @@ Through this program I aim to strengthen my understanding of:
 - Code is committed regularly with meaningful commit messages.
 - Changes are developed in feature branches before merging into `main`.
 - Pull Requests are used to integrate completed work.
+- Every hands-on exercise includes documentation for better understanding and revision.
 
 ---
 
 # Current Status
 
-- Week 1 – Completed
-- Week 2 – Completed
-- Week 3 – In Progress (Spring Data JPA completed, continuing with remaining exercises)
-- Week 4 onwards – Upcoming
+| Week | Status |
+|------|--------|
+| Week 1 | ✅ Completed |
+| Week 2 | ✅ Completed |
+| Week 3 | ✅ Completed |
+| Week 4 | ✅ Completed |
+| Week 5 | ⏳ Upcoming |
+| Week 6 | ⏳ Upcoming |
+| Week 7 | ⏳ Upcoming |
 
 ---
 
-## Author
+# Author
 
 **Luv Tomar**
 
-B.Tech Computer Science Engineering
+B.Tech – Computer Science Engineering
 
 GLA University, Mathura
 
 ---
 
-This repository is maintained as part of the **Cognizant Digital Nurture Program (Java Full Stack Engineering)** for continuous learning and skill development.
+This repository is maintained as part of the **Cognizant Digital Nurture Program (Java Full Stack Engineering)** to document my learning journey, hands-on implementations, and progress throughout the program.
