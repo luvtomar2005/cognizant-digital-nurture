@@ -468,3 +468,277 @@ Response
 - Loaded multiple beans from Spring XML configuration.
 - Implemented case-insensitive searching.
 - Returned Java objects as JSON responses.
+
+# Week 4 - JWT Authentication Service using Spring Security
+
+## Objective
+
+Implement an authentication service that validates user credentials using **Spring Security** and returns a **JSON Web Token (JWT)** upon successful authentication.
+
+This exercise demonstrates the first step in JWT-based authentication where a client sends valid credentials and receives a signed JWT token that can be used for future authenticated requests.
+
+---
+
+# Technologies Used
+
+- Java 17
+- Spring Boot 2.7.18
+- Spring Security
+- JWT (JJWT 0.9.0)
+- Maven
+- REST API
+
+---
+
+# Project Structure
+
+```
+src
+└── main
+    ├── java
+    │   └── com.cognizant.springlearn
+    │       ├── controller
+    │       │     └── AuthenticationController.java
+    │       │
+    │       ├── security
+    │       │     └── SecurityConfig.java
+    │       │
+    │       ├── util
+    │       │     └── JwtUtil.java
+    │       │
+    │       ├── model
+    │       │     └── AuthenticationResponse.java
+    │       │
+    │       └── SpringLearnApplication.java
+    │
+    └── resources
+```
+
+---
+
+# Dependencies Added
+
+```xml
+spring-boot-starter-security
+```
+
+```xml
+jjwt 0.9.0
+```
+
+Additional JAXB dependencies were added to support JWT generation while using modern Java versions.
+
+---
+
+# Security Configuration
+
+Implemented a custom `SecurityConfig` class.
+
+Configured:
+
+- In-memory authentication
+- Two users
+- Role-based authorization
+- HTTP Basic Authentication
+- CSRF disabled
+
+### Users
+
+| Username | Password | Role |
+|----------|----------|------|
+| user | pwd | USER |
+| admin | pwd | ADMIN |
+
+---
+
+# Endpoint Security
+
+| Endpoint | Access |
+|----------|--------|
+| /countries/** | USER |
+| /authenticate | USER, ADMIN |
+
+---
+
+# Authentication Controller
+
+Created
+
+```
+AuthenticationController
+```
+
+Endpoint
+
+```
+GET /authenticate
+```
+
+After successful authentication, the controller generates a JWT token and returns it inside an `AuthenticationResponse` object.
+
+---
+
+# JWT Utility
+
+Created
+
+```
+JwtUtil.java
+```
+
+Responsibilities:
+
+- Generate JWT Token
+- Set Subject
+- Set Issued Time
+- Set Expiration Time
+- Sign using HS256 Algorithm
+- Return JWT String
+
+---
+
+# Authentication Response Model
+
+Created
+
+```
+AuthenticationResponse.java
+```
+
+Contains
+
+```java
+private String token;
+```
+
+Spring Boot automatically converts this object into JSON.
+
+---
+
+# Request
+
+```
+GET /authenticate
+```
+
+Authorization
+
+```
+Basic Authentication
+```
+
+Username
+
+```
+user
+```
+
+Password
+
+```
+pwd
+```
+
+---
+
+# Sample Response
+
+```json
+{
+    "token":"eyJhbGciOiJIUzI1NiJ9..."
+}
+```
+
+---
+
+# Request Flow
+
+```
+Client
+    │
+    ▼
+HTTP Basic Authentication
+    │
+    ▼
+Spring Security
+    │
+    ▼
+AuthenticationController
+    │
+    ▼
+JwtUtil
+    │
+    ▼
+Generate JWT
+    │
+    ▼
+AuthenticationResponse
+    │
+    ▼
+JSON Response
+```
+
+---
+
+# Concepts Covered
+
+- Spring Security
+- Authentication
+- Authorization
+- HTTP Basic Authentication
+- In-Memory Users
+- Roles and Permissions
+- Security Configuration
+- REST Controller
+- JWT (JSON Web Token)
+- HS256 Signing Algorithm
+- Token Expiration
+- JSON Serialization
+- Utility Classes
+- Layered Architecture
+
+---
+
+# Learning Outcomes
+
+After completing this exercise, I learned:
+
+- How Spring Security authenticates users.
+- Difference between Authentication and Authorization.
+- Configuring in-memory users and roles.
+- Protecting REST endpoints.
+- Creating an authentication endpoint.
+- Generating JWT tokens.
+- Returning Java objects as JSON responses.
+- Understanding the purpose of JWT in stateless authentication.
+
+---
+
+# Output
+
+Authentication Request
+
+```
+GET /authenticate
+```
+
+Authentication Credentials
+
+```
+Username : user
+Password : pwd
+```
+
+Response
+
+```json
+{
+    "token":"eyJhbGciOiJIUzI1NiJ9..."
+}
+```
+
+---
+
+# Exercise Status
+
+**Completed Successfully** ✅
