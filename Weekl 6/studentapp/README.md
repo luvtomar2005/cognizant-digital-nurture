@@ -1,70 +1,174 @@
-# Getting Started with Create React App
+# Week 6 - Exercise 2: React Components (Student Management Portal)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+The objective of this exercise is to understand the fundamentals of **React Components** by creating a simple Student Management Portal. The application demonstrates how multiple components can be created independently and rendered together in a React application.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Learning Objectives
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After completing this exercise, you will be able to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Understand what React Components are.
+- Differentiate between JavaScript functions and React Components.
+- Understand the concept of Class Components.
+- Understand the purpose of the `render()` method.
+- Create multiple React components.
+- Render multiple components inside a parent component.
+- Organize components into separate files for better project structure.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+Before starting this exercise, ensure the following software is installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+- npm
+- Visual Studio Code
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Verify installation using:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+node -v
+npm -v
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- JavaScript (ES6)
+- Node.js
+- npm
+- Create React App
+- Visual Studio Code
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+```
+Exercise-2
+│
+├── StudentApp
+│   ├── src
+│   │   ├── Components
+│   │   │   ├── Home.js
+│   │   │   ├── About.js
+│   │   │   └── Contact.js
+│   │   │
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
+│   │
+│   ├── public
+│   ├── package.json
+│   ├── package-lock.json
+│   └── .gitignore
+│
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Components Created
 
-### Code Splitting
+### Home Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Displays:
 
-### Analyzing the Bundle Size
+```
+Welcome to the Home Page of Student Management Portal
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### About Component
 
-### Making a Progressive Web App
+Displays:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+Welcome to the About Page of Student Management Portal
+```
 
-### Advanced Configuration
+### Contact Component
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Displays:
 
-### Deployment
+```
+Welcome to the Contact Page of Student Management Portal
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Steps Performed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Created a React application named **StudentApp**.
+
+```bash
+npx create-react-app StudentApp
+```
+
+2. Created a **Components** folder inside the `src` directory.
+
+3. Created the following class components:
+
+- Home.js
+- About.js
+- Contact.js
+
+4. Imported all three components into `App.js`.
+
+5. Rendered all components inside the main application.
+
+6. Applied basic CSS to center the content.
+
+7. Started the React development server.
+
+```bash
+npm start
+```
+
+8. Verified the output in the browser.
+
+---
+
+## Output
+
+The application displays three messages:
+
+```
+Welcome to the Home Page of Student Management Portal
+
+Welcome to the About Page of Student Management Portal
+
+Welcome to the Contact Page of Student Management Portal
+```
+
+---
+
+## Concepts Learned
+
+- React Components
+- Class Components
+- Component Rendering
+- render() Method
+- Component Composition
+- JSX
+- Import and Export in React
+- React Project Structure
+
+---
+
+## Expected Outcome
+
+A React application successfully renders multiple class components and displays the Home, About, and Contact pages within a single parent component.
+
+---
+
+## Author
+
+**Luv Tomar**
+
+Digital Nurture 5.0 - Java FSE React
