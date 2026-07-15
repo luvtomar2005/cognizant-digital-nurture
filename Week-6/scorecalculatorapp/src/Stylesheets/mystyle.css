@@ -1,0 +1,24 @@
+div{
+    text-align:center;
+}
+
+h1{
+    color:brown;
+}
+
+h3{
+    color:red;
+    margin:8px;
+}
+
+span{
+    color:royalblue;
+}
+
+h3:last-child{
+    color:green;
+}
+
+h3:last-child span{
+    color:green;
+}
