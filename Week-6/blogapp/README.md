@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+## Objective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective of this exercise is to understand the React Component Lifecycle by fetching blog posts from a REST API using lifecycle methods.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Learning Objectives
 
-### `npm start`
+After completing this exercise, you will be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Understand the React Component Lifecycle.
+- Learn the purpose of componentDidMount().
+- Learn the purpose of componentDidCatch().
+- Understand React State.
+- Fetch data from REST APIs using the Fetch API.
+- Display dynamic data in React.
+- Handle rendering errors gracefully.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- JavaScript (ES6)
+- Fetch API
+- JSONPlaceholder REST API
+- Node.js
+- npm
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+blogapp
+│
+├── src
+│   ├── App.js
+│   ├── Posts.js
+│   ├── Post.js
+│   └── index.js
+│
+├── public
+├── package.json
+└── .gitignore
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Features Implemented
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Fetches blog posts from a REST API.
+- Displays blog post titles and descriptions.
+- Uses React State to store fetched posts.
+- Demonstrates React lifecycle methods.
+- Handles rendering errors using componentDidCatch().
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Lifecycle Methods Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### constructor()
 
-## Learn More
+- Initializes the component.
+- Creates the initial state.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### componentDidMount()
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Executes immediately after the component is mounted.
+- Calls the Fetch API to retrieve blog posts.
 
-### Code Splitting
+### componentDidCatch()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Catches rendering errors in child components.
+- Prevents the application from crashing unexpectedly.
 
-### Analyzing the Bundle Size
+### render()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Renders all blog posts dynamically using React.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## REST API Used
 
-### Advanced Configuration
+```
+https://jsonplaceholder.typicode.com/posts
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Steps Performed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Created a React project named **blogapp**.
+2. Created the `Post` model class.
+3. Created the `Posts` class component.
+4. Initialized state using the constructor.
+5. Implemented `loadPosts()` using the Fetch API.
+6. Called `loadPosts()` inside `componentDidMount()`.
+7. Rendered blog posts dynamically.
+8. Implemented `componentDidCatch()` for error handling.
+9. Displayed fetched blog posts in the browser.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Expected Output
+
+The application displays:
+
+- Blog Post Title
+- Blog Post Body
+
+for all posts retrieved from the JSONPlaceholder API.
+
+---
+
+## Concepts Learned
+
+- React Lifecycle
+- constructor()
+- React State
+- componentDidMount()
+- componentDidCatch()
+- Fetch API
+- JSON Data
+- Dynamic Rendering
+- Array Mapping
+
+---
+
+## Industry Best Practices
+
+- Use `componentDidMount()` for API calls in class components.
+- In modern React, prefer `useEffect()` and `useState()` in functional components.
+- Handle API failures using `.catch()` with Fetch.
+- Use unique keys while rendering lists.
+
+---
+
+## Author
+
+**Luv Tomar**
+
+Digital Nurture 5.0 – Java FSE React
