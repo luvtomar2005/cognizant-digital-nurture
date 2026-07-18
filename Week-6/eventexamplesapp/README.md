@@ -1,70 +1,176 @@
-# Getting Started with Create React App
+## Objective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective of this exercise is to understand how React handles events, invoke event handlers, work with Synthetic Events, and build an event-driven React application.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Learning Objectives
 
-### `npm start`
+After completing this exercise, you will be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Understand React Events.
+- Understand Event Handlers.
+- Understand Synthetic Events.
+- Learn React Event Naming Conventions.
+- Invoke multiple methods from a single event.
+- Pass arguments to event handlers.
+- Handle form submission.
+- Build a simple Currency Converter.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- JavaScript (ES6)
+- Node.js
+- npm
+- Visual Studio Code
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+eventexamplesapp
+│
+├── src
+│   ├── Components
+│   │   ├── Counter.js
+│   │   └── CurrencyConvertor.js
+│   │
+│   ├── App.js
+│   └── index.js
+│
+├── public
+├── package.json
+└── .gitignore
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Features Implemented
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Counter Component
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Increment Counter
+- Decrement Counter
+- Invoke multiple methods using a single button click
+- Display greeting message
+- Display welcome message
+- Demonstrate Synthetic Event handling
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Currency Converter
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Accept amount in Indian Rupees.
+- Convert INR to Euro.
+- Handle form submission.
+- Display converted currency.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## React Concepts Covered
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Event Handling
 
-### Code Splitting
+React handles browser events using camelCase event names.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Example:
 
-### Analyzing the Bundle Size
+```jsx
+<button onClick={handleClick}>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### Multiple Event Handling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+One button invokes multiple methods:
 
-### Advanced Configuration
+- Increment Counter
+- Display Greeting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### Passing Arguments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```jsx
+<button onClick={() => sayWelcome("Welcome")}>
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Synthetic Events
+
+React wraps native browser events into a SyntheticEvent object to provide consistent behavior across browsers.
+
+---
+
+### Form Handling
+
+- Controlled Components
+- Input Handling
+- Form Submission
+- preventDefault()
+
+---
+
+## Steps Performed
+
+1. Created a React project named **eventexamplesapp**.
+2. Created the Counter component.
+3. Implemented Increment and Decrement functionality.
+4. Implemented multiple method invocation.
+5. Passed parameters to event handlers.
+6. Demonstrated Synthetic Event handling.
+7. Created the Currency Converter component.
+8. Implemented form handling and currency conversion.
+9. Displayed the converted currency.
+
+---
+
+## Expected Output
+
+### Counter
+
+- Increment Button
+- Decrement Button
+- Say Welcome Button
+- Click on Me Button
+
+### Currency Converter
+
+- Amount Input
+- Currency Output
+- Submit Button
+
+---
+
+## Concepts Learned
+
+- React Events
+- Event Handlers
+- Synthetic Events
+- State Management
+- Controlled Components
+- Form Handling
+- Arrow Functions
+- React Event Binding
+
+---
+
+## Industry Best Practices
+
+- Prefer Functional Components with Hooks in modern React.
+- Use controlled forms.
+- Keep event handlers small and reusable.
+- Avoid inline business logic inside JSX.
+- Separate UI and business logic whenever possible.
+
+---
+
+## Author
+
+**Luv Tomar**
+
+Digital Nurture 5.0 – Java FSE React
