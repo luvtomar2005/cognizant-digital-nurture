@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Week 6 - Exercise 14: Styling React Components using CSS Modules
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+The objective of this exercise is to understand how to style React components using CSS Modules, apply inline styles, and dynamically change styles based on application data.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Learning Objectives
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Understand CSS Modules
+- Apply styles using className
+- Apply Inline Styles
+- Implement Conditional Styling
+- Render multiple components using map()
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- JavaScript (ES6)
+- CSS Modules
+- JSX
+- Node.js
+- npm
+- Visual Studio Code
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cohorttracker
+│
+├── src
+│   ├── Components
+│   │   ├── CohortDetails.js
+│   │   └── CohortDetails.module.css
+│   │
+│   ├── App.js
+│   └── index.js
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Features Implemented
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Display Cohort Details
+- CSS Module Styling
+- Inline Styling
+- Conditional Heading Colors
+- Responsive Card Layout
+- Dynamic Rendering using map()
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Concepts Learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- CSS Modules
+- className
+- Inline Styles
+- Conditional Styling
+- React Components
+- JSX
+- Arrays
+- map()
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Note
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The original starter project (`cohorttracker.zip`) referenced in the Cognizant hands-on was not available in the provided learning material. This application was recreated from scratch based on the exercise requirements and expected UI shown in the handout.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Industry Best Practices
 
-### Analyzing the Bundle Size
+- Prefer CSS Modules for component-scoped styles.
+- Use inline styles only for dynamic styling.
+- Keep reusable styles inside CSS Modules.
+- Separate UI and data for maintainability.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Luv Tomar**
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Digital Nurture 5.0 – Java FSE React
