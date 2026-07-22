@@ -1,20 +1,28 @@
-# Cognizant Digital Nurture Program – Java FSE
+# Cognizant Digital Nurture Program – Java Full Stack Engineering (Java FSE)
 
-> Repository containing my solutions, hands-on exercises, and projects completed as part of the **Cognizant Digital Nurture Program (Java Full Stack Engineering)**.
+![Java](https://img.shields.io/badge/Java-21-orange)
+![Spring](https://img.shields.io/badge/Spring-Framework-success)
+![Spring Boot](https://img.shields.io/badge/Spring-Boot-brightgreen)
+![React](https://img.shields.io/badge/React-19-blue)
+![Git](https://img.shields.io/badge/Git-Version%20Control-red)
+![Status](https://img.shields.io/badge/Progress-Week%207-yellow)
+
+> Repository containing all hands-on exercises, projects, and learning materials completed during the **Cognizant Digital Nurture Program – Java Full Stack Engineering (Java FSE)**.
 
 ---
 
-# About
+# Overview
 
-This repository is organized according to the official Cognizant Digital Nurture Program roadmap and contains all mandatory hands-on exercises completed during the Java Full Stack Engineering (Java FSE) learning program.
+This repository follows the official Cognizant Digital Nurture roadmap and contains all mandatory hands-on exercises completed throughout the Java Full Stack Engineering learning program.
 
-The objective of this repository is to:
+The repository is maintained to:
 
-- Maintain all Cognizant hands-on exercises in one place.
-- Follow industry-standard Git workflows.
-- Track progress week by week.
-- Practice clean code and software engineering principles.
-- Prepare for the Cognizant Knowledge Based Assessment (KBA) and technical interviews.
+- Complete all mandatory Cognizant hands-on exercises.
+- Practice industry-standard software development.
+- Follow professional Git workflows.
+- Strengthen Java Full Stack concepts.
+- Prepare for the Cognizant Knowledge Based Assessment (KBA).
+- Build strong fundamentals for technical interviews.
 
 ---
 
@@ -24,38 +32,53 @@ The objective of this repository is to:
 cognizant-digital-nurture
 │
 ├── Week-1
-│
 ├── Week-2
-│
 ├── Week-3
-│
 ├── Week-4
-│
-└── ...
+├── Week-5
+├── Week-6
+├── Week-7
+└── README.md
 ```
 
-Each week's folder contains the mandatory hands-on exercises assigned during the program.
+Each week's folder contains the official Cognizant hands-on exercises along with documentation.
 
 ---
 
-# Technologies Covered
+# Tech Stack
 
-## Programming Languages
+## Programming
 
 - Java
 - SQL
 - PL/SQL
+- JavaScript (ES6)
 
-## Backend Technologies
+## Spring Ecosystem
 
 - Spring Core
+- Spring JDBC
+- Spring ORM
+- Spring MVC
 - Spring Boot
 - Spring Security
 - Spring Data JPA
 - Hibernate
+
+## Frontend
+
+- HTML5
+- CSS3
+- Bootstrap
+- React
+
+## Database
+
+- MySQL
+
+## Build Tools
+
 - Maven
-- RESTful Web Services
-- JWT (JSON Web Token)
 
 ## Testing
 
@@ -66,57 +89,48 @@ Each week's folder contains the mandatory hands-on exercises assigned during the
 
 - SLF4J
 
-## Development Tools
+## Version Control
 
 - Git
 - GitHub
-- Maven
-- MySQL
+
+## IDEs
+
+- IntelliJ IDEA
 - VS Code
 
 ---
 
 # Git Workflow
 
-To follow standard software engineering practices, development is performed using **feature branches**.
-
-Workflow followed:
+Development follows a feature branch workflow.
 
 ```text
 main
-   │
-   ├── feature/week-1
-   │        │
-   │        ├── Multiple commits
-   │        ├── Pull Request
-   │        └── Merge into main
-   │
-   ├── feature/week-2
-   │        │
-   │        ├── Multiple commits
-   │        ├── Pull Request
-   │        └── Merge into main
-   │
-   ├── feature/week-3
-   │        │
-   │        ├── Multiple commits
-   │        ├── Pull Request
-   │        └── Merge into main
-   │
-   ├── feature/week-4
-   │        │
-   │        ├── Multiple commits
-   │        ├── Pull Request
-   │        └── Merge into main
-   │
-   └── ...
+│
+├── feature/week-1
+├── feature/week-2
+├── feature/week-3
+├── feature/week-4
+├── feature/week-5
+├── feature/week-6
+├── feature/week-7
+└── ...
 ```
 
-After successful review and merge, feature branches are deleted to keep the repository clean while preserving the complete Pull Request and commit history.
+For every week:
+
+- Create feature branch
+- Complete exercises
+- Commit regularly
+- Push to GitHub
+- Create Pull Request
+- Merge into main
+- Delete feature branch
 
 ---
 
-# Progress
+# Weekly Progress
 
 ## Week 1
 
@@ -129,30 +143,28 @@ After successful review and merge, feature branches are deleted to keep the repo
 - Control Structures
 - Stored Procedures
 
-### JUnit 5
+### Unit Testing
 
-- Setting Up JUnit
+- JUnit 5
 - Assertions
-- Arrange-Act-Assert Pattern
-- Test Fixtures
-- Setup & Teardown Methods
+- Arrange–Act–Assert Pattern
+- Setup & Teardown
 
 ### Mockito
 
-- Mocking and Stubbing
-- Verifying Interactions
+- Mocking
+- Stubbing
+- Verification
 
 ### Logging
 
-- SLF4J Logging Framework
+- SLF4J
 
 ---
 
 ## Week 2
 
-### Cognizant Mandatory Hands-on Exercises
-
-- Completed all mandatory exercises assigned for Week 2.
+Completed all mandatory Cognizant hands-on exercises.
 
 ---
 
@@ -160,82 +172,156 @@ After successful review and merge, feature branches are deleted to keep the repo
 
 ### Spring Core
 
-- Configuring a Basic Spring Application
-- Implementing Dependency Injection
-- Spring Bean Configuration
-- Spring IoC Container
+- IoC Container
+- Dependency Injection
+- XML Configuration
+- Annotation Configuration
+- Java Configuration
+- Bean Scope
+- Autowiring
+- Stereotype Annotations
 
 ### Maven
 
-- Creating and Configuring Maven Projects
+- Project Structure
 - Dependency Management
 
 ### Spring Data JPA
 
-- Spring Data JPA Quick Example
-- Entity Mapping
 - Repository Layer
-- Service Layer
-- Difference between JPA, Hibernate and Spring Data JPA
+- Entity Mapping
+- CRUD Operations
 
 ---
 
 ## Week 4
 
-### Spring REST using Spring Boot
+### Spring Boot
 
-- Created Spring Boot Web Application
-- Configured Spring XML Bean Definitions
-- Loaded Country Bean from XML Configuration
-- Hello World RESTful Web Service
-- REST API to Retrieve Country Details
-- REST API to Retrieve Country using Country Code
-- Layered Architecture (Controller-Service)
+- Spring Boot Fundamentals
+- REST APIs
+- Controller Layer
+- Service Layer
 
-### Spring Security & JWT
+### Spring Security
 
-- Configured Spring Security
-- In-Memory User Authentication
-- Role-Based Authorization
-- HTTP Basic Authentication
-- JWT Token Generation
-- Authentication Service returning JWT Token
-- Protected REST Endpoints
+- Authentication
+- Authorization
+- Role-Based Access
+
+### JWT
+
+- Token Generation
+- Protected APIs
+
+---
+
+## Week 5
+
+### Microservices
+
+- Account Microservice
+- Loan Microservice
+- REST Communication
+- Maven Multi-Module Basics
+
+---
+
+## Week 6
+
+### React
+
+- JSX
+- Functional Components
+- Props
+- State
+- Event Handling
+- Conditional Rendering
+- Lists
+- Styling
+- Forms
+
+Completed all mandatory React hands-on exercises.
+
+---
+
+## Week 7
+
+### Git
+
+- Git Configuration
+- Repository Initialization
+- Git Ignore
+- Working Directory
+- Staging Area
+- Local Repository
+- Remote Repository
+- Git Commands
+
+*(In Progress)*
+
+---
+
+# Additional Learning
+
+Alongside the mandatory Cognizant exercises, I also studied:
+
+### Spring Framework
+
+- Spring JDBC
+- Spring ORM
+- Spring MVC
+
+### Design Principles
+
+- SOLID Principles
+
+### Design Patterns
+
+- Singleton Pattern
+- Factory Pattern
+- Builder Pattern
+- Prototype Pattern
 
 ---
 
 # Highlights
 
-- Followed layered architecture in Spring applications.
-- Implemented Dependency Injection using Spring IoC.
-- Built Spring Boot applications using Maven.
-- Developed RESTful Web Services using Spring Boot.
-- Implemented Spring Security with role-based authentication.
-- Generated JWT tokens for authenticated users.
-- Connected Spring Boot with MySQL using Spring Data JPA.
-- Created Controller, Service, Repository and Entity layers.
-- Used Hibernate as the JPA implementation.
-- Followed Git feature branch workflow with Pull Requests.
-- Documented every hands-on exercise with detailed README files.
+- Followed layered architecture.
+- Implemented Dependency Injection.
+- Developed RESTful APIs.
+- Built Spring Boot applications.
+- Configured Spring Security.
+- Implemented JWT Authentication.
+- Connected applications with MySQL.
+- Used Hibernate as the ORM framework.
+- Practiced React fundamentals.
+- Followed professional Git workflow.
+- Documented every exercise with dedicated README files.
 
 ---
 
 # Learning Objectives
 
-Through this program I aim to strengthen my understanding of:
+This program strengthens my understanding of:
 
 - Core Java
-- Object-Oriented Programming
+- OOP
+- Collections
 - Spring Framework
 - Spring Boot
+- Spring MVC
+- Spring JDBC
+- Spring ORM
 - Spring Security
-- REST API Development
-- JWT Authentication
-- Spring Data JPA
+- REST APIs
+- JWT
 - Hibernate
-- SQL & PL/SQL
-- Unit Testing
-- Logging Frameworks
+- Spring Data JPA
+- SQL
+- PL/SQL
+- React
+- Maven
 - Git & GitHub
 - Software Engineering Best Practices
 
@@ -243,11 +329,13 @@ Through this program I aim to strengthen my understanding of:
 
 # Repository Guidelines
 
-- Each exercise is organized week-wise.
-- Code is committed regularly with meaningful commit messages.
-- Changes are developed in feature branches before merging into `main`.
-- Pull Requests are used to integrate completed work.
-- Every hands-on exercise includes documentation for better understanding and revision.
+- Organized week-wise.
+- Professional Git workflow.
+- Feature branch development.
+- Pull Requests for integration.
+- Meaningful commit messages.
+- Dedicated README for every exercise.
+- Clean project structure.
 
 ---
 
@@ -259,9 +347,21 @@ Through this program I aim to strengthen my understanding of:
 | Week 2 | ✅ Completed |
 | Week 3 | ✅ Completed |
 | Week 4 | ✅ Completed |
-| Week 5 | ⏳ Upcoming |
-| Week 6 | ⏳ Upcoming |
-| Week 7 | ⏳ Upcoming |
+| Week 5 | ✅ Completed |
+| Week 6 | ✅ Completed |
+| Week 7 | 🚧 In Progress |
+
+---
+
+# Repository Statistics
+
+| Metric | Value |
+|---------|-------|
+| Weeks Completed | **6 / 7** |
+| Current Week | **Week 7** |
+| Spring Modules Covered | **Spring Core, JDBC, ORM, MVC, Boot, Security** |
+| Frontend | **React** |
+| Git Workflow | **Feature Branch + Pull Request** |
 
 ---
 
@@ -273,6 +373,8 @@ B.Tech – Computer Science Engineering
 
 GLA University, Mathura
 
+GitHub: https://github.com/luvtomar2005
+
 ---
 
-This repository is maintained as part of the **Cognizant Digital Nurture Program (Java Full Stack Engineering)** to document my learning journey, hands-on implementations, and progress throughout the program.
+This repository documents my progress throughout the Cognizant Digital Nurture Program and serves as a structured collection of my hands-on implementations, projects, and learning notes in Java Full Stack Engineering.
