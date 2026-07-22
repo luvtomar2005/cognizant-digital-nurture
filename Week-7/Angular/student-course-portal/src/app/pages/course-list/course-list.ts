@@ -1,20 +1,32 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CourseCardComponent } from '../../components/course-card/course-card';
+import { DatePipe, CurrencyPipe, UpperCasePipe, TitleCasePipe } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-course-list',
   standalone: true,
-  imports: [
-    CommonModule,
-    CourseCardComponent
-  ],
+ imports: [
+  CommonModule,
+  CourseCardComponent,
+  DatePipe,
+  CurrencyPipe,
+  UpperCasePipe,
+  TitleCasePipe,
+ 
+],
   templateUrl: './course-list.html',
   styleUrl: './course-list.css'
 })
 export class CourseListComponent {
 
   selectedCourseId = 0;
+  today = new Date();
+
+courseFee = 4999;
+  showCourses = true;
 
   courses = [
     {
@@ -49,7 +61,7 @@ export class CourseListComponent {
     }
   ];
 
-  onEnroll(courseId: number) {
+  onEnroll(courseId: number): void {
     console.log('Enrolled Course:', courseId);
     this.selectedCourseId = courseId;
   }

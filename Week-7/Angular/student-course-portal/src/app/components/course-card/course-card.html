@@ -1,11 +1,17 @@
-<div class="course-card">
+<div
+    appHighlight
+    [ngClass]="getCardClass()"
+    [ngStyle]="getCardStyle()">
 
     <h3>{{ course.name }}</h3>
 
     <p>Course Code : {{ course.code }}</p>
 
     <p>Credits : {{ course.credits }}</p>
-
+    <p>
+        Level :
+        {{ course.credits | courseLevel }}
+    </p>
     <button (click)="enroll()">
         Enroll
     </button>
