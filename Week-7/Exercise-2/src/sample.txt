@@ -1,0 +1,2 @@
+This is just the sample text file for checking 
+and understanding the purpose of this file 
